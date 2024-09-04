@@ -1,26 +1,28 @@
-#include <iostream> //input and output stream 
-
+#include <iostream> // Input and output stream
 using namespace std;
 
-// Swap the values of two integers
-void swap(int &a, int &b) {
-    int temp = a;
-    a = b;
-    b = temp;
+// The function to swap the values of two integers a and b
+void temp(int &a, int &b) {
+  int temp = a;
+  a = b;
+  b = temp;
 }
-// Set the initialize num1 with value 2 and num2 with value 1
+
+// swap the num1 with the value 1 and num2  with the value 10
 int main(){
-    int num1=2; //num1 with the value 2
-    int num2=1;//num2 with the value 1
-    //Print the values of num1 and num2 before the swap
-    cout << "Before swap: " << endl;
-    cout << "num1 = "<<num1 << ", num2 = " << num2 << endl;
-    //swap the values of num1 and num2
-    swap(num1, num2);
- 
-    //Print the values of num1 and num2 after the swap
-    cout << "After swap:" <<endl;
-    cout << "num1 =" << num1 << ", num2 = "<< num2 << endl;
-    
-    return 0; //program end
+  int num1 = 10; // num1 with the value 2
+  int num2 = 1; // num2 with the value 1
+
+  // This part show before the swap
+  cout << "before: " << endl;
+  cout << "num1 = " << num1 << ", num2 = " << num2 << endl;
+
+  // Use temp function to swap the values of num1 and num2
+  temp(num1, num2);
+
+  // This part show after the swap 
+  cout << "after:" << endl;
+  cout << "num1 = " << num1 << ", num2 = " << num2 << endl;
+
+  return 0; // Program end
 }
